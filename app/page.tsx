@@ -162,7 +162,7 @@ export default function Chat() {
 
   return (
     <main className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Continent RAG Chat</h1>
+      <h1 className="text-2xl font-bold mb-4">RAG Chat</h1>
       <div className="space-y-4">
         {messages.map((m, i) => (
           <div key={i} className="p-2 border rounded">
