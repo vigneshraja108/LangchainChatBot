@@ -3,14 +3,12 @@
 //   /* config options here */
 // };
 
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
   experimental: {
-    turbo: false, // ✅ Disable Turbopack
+    // no turbo unless configured correctly
   },
-  reactStrictMode: false,
 };
 
-export default nextConfig; // ✅ Correct way in TypeScript ESM
-
+export default nextConfig;
